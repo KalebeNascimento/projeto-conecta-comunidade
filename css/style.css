@@ -1,0 +1,214 @@
+/* Importação das fontes (Roboto para títulos, Open Sans para corpo) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Open+Sans&display=swap');
+
+/* Reset Básico e Padrões Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* FONTE 1: 'Open Sans' para o texto geral */
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    /* Adiciona padding para evitar que o conteúdo fique atrás do header/footer fixos */
+    padding-top: 70px;
+    padding-bottom: 60px;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* FONTE 2: 'Roboto' para os títulos */
+h1, h2, h3, h4 {
+    font-family: 'Roboto', sans-serif;
+    color: #0056b3;
+    margin-bottom: 15px;
+}
+
+/* Cabeçalho Fixo */
+header {
+    background: #ffffff;
+    border-bottom: 2px solid #0056b3;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 100;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    /* h1 já está coberto pela regra de fontes 'Roboto' */
+    font-size: 24px;
+}
+
+header h1 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+    padding: 5px;
+}
+
+header nav ul li a:hover {
+    color: #0056b3;
+    border-bottom: 2px solid #0056b3;
+}
+
+/* Conteúdo Principal */
+main {
+    padding: 20px 0;
+}
+
+section {
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* h2, h3 já estão cobertos pela regra de fontes 'Roboto' */
+
+/* Seção: Categorias */
+.categorias-grid {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.categoria-item span {
+    font-size: 40px;
+}
+
+.categoria-item p {
+    /* Garante que o texto da categoria use a fonte do corpo */
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: #555;
+}
+
+
+/* Seção: Destaques */
+.destaques-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.comerciante-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #f9f9f9;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.comerciante-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block; /* Remove espaço extra abaixo da imagem */
+}
+
+.comerciante-card h4 {
+     /* h4 já está coberto pela regra de fontes 'Roboto' */
+    color: #333;
+    padding: 10px 15px 5px 15px;
+}
+
+.comerciante-card p {
+    padding: 0 15px 15px 15px;
+    font-size: 14px;
+}
+
+.btn {
+    display: inline-block;
+    background: #007bff;
+    color: #fff;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 15px 15px 15px;
+    font-family: 'Roboto', sans-serif; /* Dando ao botão a fonte de destaque */
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+/* Página de Cadastro: Formulário */
+.form-cadastro .form-grupo {
+    margin-bottom: 15px;
+}
+
+.form-cadastro label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-cadastro input[type="text"],
+.form-cadastro input[type="email"],
+.form-cadastro input[type="tel"],
+.form-cadastro input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Open Sans', Arial, sans-serif; /* Garante que os inputs usem a fonte do corpo */
+}
+
+.form-cadastro .btn {
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+/* Rodapé Fixo */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    font-size: 14px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: underline;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Conecta Comunidade</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html">Conecta Comunidade</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Voltar à Página Principal</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="cadastro" class="container">
+            <h2>Cadastre seu Comércio</h2>
+            <p>Preencha o formulário abaixo para dar visibilidade ao seu negócio.</p>
+
+            <form action="login-futuro.html" method="get" class="form-cadastro">
+                <div class="form-grupo">
+                    <label for="nome-comercio">Nome do Comércio</label>
+                    <input type="text" id="nome-comercio" name="nome-comercio" required>
+                </div>
+
+                <div class="form-grupo">
+                    <label for="responsavel">Responsável</label>
+                    <input type="text" id="responsavel" name="responsavel" required>
+                </div>
+
+                <div class="form-grupo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-grupo">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+                </div>
+
+                <div class="form-grupo">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" required minlength="6">
+                </div>
+
+                <div class="form-grupo">
+                    <label for="conf-senha">Confirmação de Senha</label>
+                    <input type="password" id="conf-senha" name="conf-senha" required minlength="6">
+                </div>
+
+                <button type="submit" class="btn">Enviar Cadastro</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Conecta Comunidade - Projeto de Programação Web Front-End</p>
+            <p>Autor: Kalebe Silva do Nascimento | <a href="curriculo-kalebe.pdf" target="_blank">Ver Currículo</a></p>
+        </div>
+    </footer>
+</body>
+</html>
