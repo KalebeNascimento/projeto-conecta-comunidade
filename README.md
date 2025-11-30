@@ -2,7 +2,7 @@
 
 O **ConectaComunidade** é uma aplicação web que tem como objetivo **fortalecer a comunidade local**, conectando pequenos comerciantes e produtores da região a consumidores interessados em apoiar negócios locais. A plataforma funciona como uma **vitrine digital**, oferecendo visibilidade para empreendedores que muitas vezes não possuem recursos para construir uma presença online robusta.
 
-Este projeto foi desenvolvido como parte da disciplina **Programação Web Front-End** na **UTFPR (2024/02)**.
+Este projeto foi desenvolvido como parte da disciplina **Programação Web Front-End** na **UTFPR (2025/02)**.
 
 ---
 
