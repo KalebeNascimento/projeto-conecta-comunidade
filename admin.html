@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Conecta Comunidade</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html">Conecta Comunidade</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Voltar à Página Principal</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="admin" class="container">
+            <h2>Administração de Usuários</h2>
+            <p>Cadastre novos usuários para o sistema.</p>
+
+            <form id="formCadastro" class="form-cadastro">
+                <div class="form-grupo">
+                    <label for="nomeUsuario">Nome do Usuário</label>
+                    <input type="text" id="nomeUsuario" name="nomeUsuario" required>
+                </div>
+
+                <div class="form-grupo">
+                    <label for="emailUsuario">E-mail</label>
+                    <input type="email" id="emailUsuario" name="emailUsuario" required>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn">Cadastrar</button>
+                    <button type="button" id="btnLimpar" class="btn btn-secondary">Limpar Campos</button>
+                </div>
+            </form>
+
+            <div class="lista-usuarios">
+                <div class="lista-header">
+                    <h3>Usuários Cadastrados</h3>
+                    <div class="lista-controles">
+                        <input type="text" id="campoPesquisa" placeholder="Pesquisar por nome ou e-mail...">
+                        <button id="btnExcluirTodos" class="btn btn-danger">Excluir Todos</button>
+                    </div>
+                </div>
+                <ul id="listaUsuarios"></ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Conecta Comunidade - Projeto de Programação Web Front-End</p>
+            <p>Autor: Kalebe Silva do Nascimento | <a href="https://kalebenascimento.github.io/cv-web/" target="_blank">Ver Currículo</a></p>
+        </div>
+    </footer>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>

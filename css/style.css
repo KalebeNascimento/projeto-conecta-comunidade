@@ -9,12 +9,10 @@
 }
 
 body {
-    /* FONTE 1: 'Open Sans' para o texto geral */
     font-family: 'Open Sans', Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
-    /* Adiciona padding para evitar que o conteúdo fique atrás do header/footer fixos */
     padding-top: 70px;
     padding-bottom: 60px;
 }
@@ -25,7 +23,6 @@ body {
     padding: 0 20px;
 }
 
-/* FONTE 2: 'Roboto' para os títulos */
 h1, h2, h3, h4 {
     font-family: 'Roboto', sans-serif;
     color: #0056b3;
@@ -52,7 +49,6 @@ header .container {
 }
 
 header h1 {
-    /* h1 já está coberto pela regra de fontes 'Roboto' */
     font-size: 24px;
 }
 
@@ -95,8 +91,6 @@ section {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* h2, h3 já estão cobertos pela regra de fontes 'Roboto' */
-
 /* Seção: Categorias */
 .categorias-grid {
     display: flex;
@@ -109,12 +103,10 @@ section {
 }
 
 .categoria-item p {
-    /* Garante que o texto da categoria use a fonte do corpo */
     font-family: 'Open Sans', Arial, sans-serif;
     font-weight: bold;
     color: #555;
 }
-
 
 /* Seção: Destaques */
 .destaques-grid {
@@ -135,11 +127,10 @@ section {
     width: 100%;
     height: 150px;
     object-fit: cover;
-    display: block; /* Remove espaço extra abaixo da imagem */
+    display: block;
 }
 
 .comerciante-card h4 {
-     /* h4 já está coberto pela regra de fontes 'Roboto' */
     color: #333;
     padding: 10px 15px 5px 15px;
 }
@@ -157,7 +148,10 @@ section {
     text-decoration: none;
     border-radius: 5px;
     margin: 0 15px 15px 15px;
-    font-family: 'Roboto', sans-serif; /* Dando ao botão a fonte de destaque */
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
 }
 
 .btn:hover {
@@ -165,6 +159,10 @@ section {
 }
 
 /* Página de Cadastro: Formulário */
+.form-cadastro {
+    margin-bottom: 30px;
+}
+
 .form-cadastro .form-grupo {
     margin-bottom: 15px;
 }
@@ -184,15 +182,132 @@ section {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-family: 'Open Sans', Arial, sans-serif; /* Garante que os inputs usem a fonte do corpo */
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 14px;
 }
 
-.form-cadastro .btn {
-    border: none;
-    cursor: pointer;
+.form-cadastro input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.form-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-secondary {
+    background: #6c757d;
+}
+
+.btn-secondary:hover {
+    background: #5a6268;
+}
+
+.btn-danger {
+    background: #dc3545;
+}
+
+.btn-danger:hover {
+    background: #c82333;
+}
+
+/* Estilos da página Admin */
+.lista-usuarios {
+    margin-top: 40px;
+}
+
+.lista-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.lista-header h3 {
+    margin: 0;
+}
+
+.lista-controles {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#campoPesquisa {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 14px;
+    min-width: 250px;
+}
+
+#campoPesquisa:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+#listaUsuarios {
+    list-style: none;
+    padding: 0;
+}
+
+.usuario-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background: #f9f9f9;
+}
+
+.usuario-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.usuario-info strong {
+    color: #0056b3;
     font-size: 16px;
 }
 
+.usuario-info span {
+    color: #555;
+    font-size: 14px;
+}
+
+.usuario-info small {
+    color: #888;
+    font-size: 12px;
+}
+
+.btn-excluir {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.btn-excluir:hover {
+    background: #c82333;
+}
+
+.lista-vazia {
+    text-align: center;
+    padding: 40px;
+    color: #888;
+    font-style: italic;
+}
 
 /* Rodapé Fixo */
 footer {
@@ -211,4 +326,30 @@ footer {
 footer a {
     color: #fff;
     text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .lista-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .lista-controles {
+        width: 100%;
+    }
+
+    #campoPesquisa {
+        width: 100%;
+    }
+
+    .usuario-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .btn-excluir {
+        align-self: flex-end;
+    }
 }
