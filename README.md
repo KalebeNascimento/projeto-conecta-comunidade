@@ -259,7 +259,7 @@ http://localhost:8000
 
 **Kalebe Silva do Nascimento**  
 - Disciplina: *Programação Web Front-End (UTFPR – 2024/02)*  
-- Professora: *Rosangela de Fátima Pereira Marquesone*  
+- Professor: *Gabriel Canhadas Genvigir*  
 - 📧 Email: [kalebesilvanascimento@alunos.utfpr.edu.br]
 - 💼 LinkedIn: [https://www.linkedin.com/in/kalebe-exe/]
 - 📄 Currículo: [Ver Currículo](https://kalebenascimento.github.io/cv-web/)
