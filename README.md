@@ -46,6 +46,7 @@ PROJETO/
 │   ├── mercearia.jpg       # Imagem da Mercearia do Bairro
 │   └── Padaria.jpg         # Imagem da Padaria do Zé
 ├── js/
+│   ├── acessibilidade.js   # Script de acessibilidade (fonte/contraste)
 │   └── admin.js            # Lógica JavaScript do painel admin
 ├── admin.html              # Página de administração (Projeto 2)
 ├── cadastro.html           # Página de cadastro de comércios
