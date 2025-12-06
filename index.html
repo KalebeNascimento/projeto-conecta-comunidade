@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div id="barra-acessibilidade" role="toolbar" aria-label="Ferramentas de acessibilidade">
+        <div class="container">
+            <span>Acessibilidade:</span>
+            <button id="btn-diminuir-fonte" title="Diminuir tamanho da fonte (A-)">A-</button>
+            <button id="btn-resetar-fonte" title="Tamanho original da fonte (A)">A</button>
+            <button id="btn-aumentar-fonte" title="Aumentar tamanho da fonte (A+)">A+</button>
+            <button id="btn-alto-contraste" title="Alternar alto contraste (C)">◐ Alto Contraste</button>
+        </div>
+    </div>
     <header>
         <div class="container">
             <h1>Conecta Comunidade</h1>
@@ -77,11 +86,13 @@
         </section>
     </main>
 
-    <footer>
+<footer>
         <div class="container">
             <p>&copy; 2025 Conecta Comunidade - Projeto de Programação Web Front-End</p>
             <p>Autor: Kalebe Silva do Nascimento | <a href="https://kalebenascimento.github.io/cv-web/" target="_blank">Ver Currículo</a></p>
         </div>
     </footer>
+
+    <script src="js/acessibilidade.js"></script> 
 </body>
 </html>

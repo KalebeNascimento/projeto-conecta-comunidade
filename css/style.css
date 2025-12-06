@@ -352,4 +352,84 @@ footer a {
     .btn-excluir {
         align-self: flex-end;
     }
+} /* <<< Correção Importante: Fechamento da Media Query */
+
+
+/* --- ACESSIBILIDADE (ABNT NBR 17225) --- */
+
+/* Estilo da Barra de Ferramentas */
+#barra-acessibilidade {
+    background-color: #eee;
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+}
+
+#barra-acessibilidade .container {
+    display: flex;
+    justify-content: flex-end; /* Alinha à direita */
+    align-items: center;
+    gap: 10px;
+}
+
+#barra-acessibilidade button {
+    background: #fff;
+    border: 1px solid #999;
+    padding: 2px 8px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+#barra-acessibilidade button:hover {
+    background: #ddd;
+}
+
+/* --- MODO ALTO CONTRASTE --- */
+body.alto-contraste {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+/* Força fundo preto e texto branco em todas as seções principais */
+body.alto-contraste header,
+body.alto-contraste footer,
+body.alto-contraste section,
+body.alto-contraste nav,
+body.alto-contraste div,
+body.alto-contraste article,
+body.alto-contraste .comerciante-card,
+body.alto-contraste .usuario-item,
+body.alto-contraste form,
+body.alto-contraste input,
+body.alto-contraste #barra-acessibilidade {
+    background-color: #000 !important;
+    color: #fff !important;
+    border-color: #fff !important;
+    box-shadow: none !important;
+}
+
+/* Destaca os links em amarelo para leitura fácil */
+body.alto-contraste a {
+    color: #ffff00 !important;
+    text-decoration: underline !important;
+}
+
+/* Botões com borda branca */
+body.alto-contraste button,
+body.alto-contraste .btn {
+    background-color: #000 !important;
+    color: #fff !important;
+    border: 2px solid #fff !important;
+}
+
+body.alto-contraste button:hover,
+body.alto-contraste .btn:hover {
+    background-color: #333 !important;
+}
+
+/* Garante que ícones/emojis permaneçam visíveis */
+body.alto-contraste span {
+    color: #fff !important;
 }
